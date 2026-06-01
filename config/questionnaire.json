@@ -1,0 +1,60 @@
+{
+  "companyName": "BrightLine Electrical Contractors",
+  "domainKnowledge": "Use trade-specific language for commercial and residential electrical work. Mention code compliance, safe isolation, testing, commissioning, coordination with other trades, labeling, access requirements, containment, protection of existing finishes, and clean handover where relevant. Do not invent permits, inspections, brands, or load calculations if the contractor did not provide them.",
+  "proposalExamples": "Example tone: clear, confident, technically literate, and commercially practical. Avoid generic marketing language. Explain inclusions, exclusions, assumptions, and next steps in plain contractor language.",
+  "steps": [
+    {
+      "id": "client",
+      "title": "Client & Project",
+      "fields": [
+        { "id": "clientName", "label": "Client name", "type": "text", "required": true },
+        { "id": "clientCompany", "label": "Client company", "type": "text" },
+        { "id": "projectName", "label": "Project name", "type": "text", "required": true },
+        { "id": "siteAddress", "label": "Site address", "type": "textarea", "required": true },
+        { "id": "proposalDate", "label": "Proposal date", "type": "date" }
+      ]
+    },
+    {
+      "id": "scope",
+      "title": "Scope",
+      "fields": [
+        { "id": "jobType", "label": "Job type", "type": "select", "options": ["Commercial fit-out", "Residential renovation", "Service upgrade", "EV charger install", "Lighting upgrade", "Fault finding and repair", "New build", "Other"], "required": true },
+        { "id": "workSummary", "label": "Work summary", "type": "textarea", "required": true },
+        { "id": "systemsIncluded", "label": "Systems included", "type": "multiselect", "options": ["Power", "Lighting", "Emergency lighting", "Distribution board", "Data/communications", "Fire alarm interface", "EV charging", "Containment", "Testing and certification"] },
+        { "id": "drawingsOrSpecs", "label": "Drawings/specifications referenced", "type": "textarea" }
+      ]
+    },
+    {
+      "id": "technical",
+      "title": "Technical Detail",
+      "fields": [
+        { "id": "supplyDetails", "label": "Supply and distribution details", "type": "textarea" },
+        { "id": "loadConsiderations", "label": "Load considerations", "type": "textarea" },
+        { "id": "materials", "label": "Preferred materials or equipment", "type": "textarea" },
+        { "id": "testing", "label": "Testing/commissioning requirements", "type": "textarea" },
+        { "id": "compliance", "label": "Relevant standards or local code requirements", "type": "textarea" }
+      ]
+    },
+    {
+      "id": "commercial",
+      "title": "Commercials",
+      "fields": [
+        { "id": "price", "label": "Quoted price", "type": "text", "required": true },
+        { "id": "taxTreatment", "label": "Tax treatment", "type": "select", "options": ["Plus applicable tax", "Including applicable tax", "Tax exempt", "To be confirmed"] },
+        { "id": "timeline", "label": "Estimated timeline", "type": "textarea" },
+        { "id": "paymentTerms", "label": "Payment terms", "type": "textarea" },
+        { "id": "validity", "label": "Quote validity", "type": "text" }
+      ]
+    },
+    {
+      "id": "risk",
+      "title": "Assumptions & Exclusions",
+      "fields": [
+        { "id": "assumptions", "label": "Assumptions", "type": "textarea" },
+        { "id": "exclusions", "label": "Exclusions", "type": "textarea" },
+        { "id": "accessConstraints", "label": "Access constraints", "type": "textarea" },
+        { "id": "clientResponsibilities", "label": "Client responsibilities", "type": "textarea" }
+      ]
+    }
+  ]
+}
