@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": "b8f6364f-6de9-4720-8c6c-d1c1a96dc479",
+      "email": "testaexample.com",
+      "passwordHash": "$2b$12$vE7lisow19mIWJiB.dWr/OHXrRg3Utpj7VDldFdjjimuLZkgKaaC6",
+      "createdAt": "2026-06-01T14:32:43.092Z"
+    }
+  ],
+  "proposals": [
+    
+  ]
+}
